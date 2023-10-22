@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/Style.css">
+    <title>Lab.Hardware/Protocolos de Red</title>
+</head>
+<body>
+    <div class="Titulo">
+        <h1>Protocolos de Red</h1>
+    </div>
+    <div class="Nombre">
+        <p>By Eros Sunda</p>
+    </div>
+
+    <div class="Informacion">
+        <h1>¿Que son?</h1>
+        <br>
+        <h6>
+            Los protocolos de red son aquellos protocolos configurables dentro de una red para generar el correcto direccionamiento de datos dentro de una red.
+        </h6>
+        <br>
+        <br>
+        <img src="../IMG/PdR/Prot.jpg" class="Imagenes">
+        <br>
+        <br>
+        <h1 id="Enrut">Enrrutamiento</h1>
+        <br>
+        <h6>
+            El enrutamiento es el proceso de selección de rutas en cualquier red. Una red de computación está formada por muchas máquinas, llamadas nodos, y rutas o enlaces que conectan dichos nodos. Podemos reconocer dos tipos de enrutamiento principales
+        </h6>
+        <h3 id="Estat">Estatico</h3>
+        <br>
+        <h6>
+            En el enrutamiento estático, un administrador de red utiliza tablas estáticas para configurar y seleccionar manualmente las rutas de red. El enrutamiento estático es útil en situaciones en las que se espera que el diseño o los parámetros de la red permanezcan constantes.
+        </h6>
+        <br>
+        <h6>
+            Este puede hacerse de 2 formas:
+            <br>
+            <B>ip route 172.16.2.0 255.255.255.0 172.16.4.2</B>
+            <br>
+            O
+            <br>
+            <B>ip route 172.16.3.0 255.255.255.0 S0/0/1</B>
+        </h6>
+        <br>
+        <h3 id="Din">Dinamico</h3>
+        <br>
+        <h6>El Enrutamiento dinámico, también llamado enrutamiento adaptativo, es un proceso en el que un enrutador puede reenviar datos a través de una ruta diferente para un destino determinado en función de las condiciones actuales de los circuitos de comunicación dentro de un sistema.</h6>
+        <br>
+        <h6>Existen dos tipos de principales enrrutamiento dinamico:</h6>
+        <br>
+        <ul>
+            <li><h6><B>Vector Distancia: </B>Este protocolo se beneficia del uso de vectores para poder saber cuál es la distancia que hay en una ruta. Implica un proceso pausado que dependerá del tamaño de la red y del sistema. No requiere grandes conocimientos para realizar su configuración, siendo uno de los protocolos más utilizados debido a la sencillez que implica su optimización. Cuando ya está funcionando el protocolo se dedica al envío de la tabla del enrutamiento, ocupándose de ello a través de sistemas multicast o broadcast dependiendo del caso. Por ejemplo: </h6></li>
+                <ul>
+                    <li><h6><B>Rip V1</B></h6></li>
+                    <li><h6><B>Rip V2</B></h6></li>
+                    <li><h6><B>IGRP</B></h6></li>
+                    <li><h6><B>EIGRP</B></h6></li>
+                </ul>
+            <li><h6><B>Estados de Enlace: </B>Este es otro de los protocolos principales de los que tenemos que hablar y saber cuando nos referimos al enrutamiento dinámico. Incluye los correspondientes a OSPF e IS-IS, destacando por ser más rápidos y por mantenerse actualizados de una manera distinta, mucho más dinámica y funcional. Son protocolos más eficientes y aprovechan la red con una mayor capacidad, pero esto también significa que es más complicado trabajar con ellos. Debemos tener una formación adecuada a la hora de conseguir configurarlos y exprimir sus posibilidades. Por ejemplo: </h6></li>
+            <ul>
+                <li><h6><B>OSPF</B></h6></li>
+                <li><h6><B>SIS-SIS</B></h6></li>
+                <li><h6><B>BGP</B></h6></li>
+            </ul>
+        </ul>
+        <br>
+        <br>
+        <h1 id="DHCP">DHCP</h1>
+        <br>
+        <h6>
+            El Protocolo de configuración dinámica de host (DHCP) es un protocolo cliente-servidor que proporciona automáticamente un host de protocolo de Internet (IP) con su dirección IP y otra información de configuración relacionada, como la máscara de subred y la puerta de enlace de predeterminada.
+        </h6>
+        <br>
+        <br>
+        <img src="../IMG/PdR/DHCP.png" class="Imagenes">
+        <br>
+        <br>
+        <h1 id="Pat">NAT-PAT</h1>
+        <br>
+        <h6>La traducción de direcciones de red, también llamado enmascaramiento de IP o NAT, es un mecanismo utilizado por routers IP para cambiar paquetes entre dos redes que asignan mutuamente direcciones incompatibles. Consiste en convertir, en tiempo real, las direcciones utilizadas en los paquetes transportados.</h6>
+        <br>
+        <br>
+        <img src="../IMG/PdR/NAT.png" class="Imagenes">
+        <br>
+        <br>
+        <h6>Por otro lado, Port Address Translation (PAT) es una característica del estándar NAT, que traduce conexiones TCP y UDP hechas por un host y un puerto en una red externa a otra dirección y puerto de la red interna. Permite que una sola dirección IP sea utilizada por varias máquinas de la intranet.</h6>
+        <br>
+        <br>
+        <img src="../IMG/PdR/PAT.jpg" class="Imagenes">
+    </div>
+    <a href="../index.html"><input  type="button" class="Boton1" value ="← Inicio">
+    <a href="../Archivos" download=""><input  type="button" class="Boton2" value ="Descargar">
+</body>
+</html>

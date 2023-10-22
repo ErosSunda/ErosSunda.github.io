@@ -1,0 +1,119 @@
+body{
+    background-image: url(../IMG/FondoP.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+.Titulo{
+    width: 100%;
+    text-align: center;
+    border-style: double none double none;
+    border-width: 5px;
+    border-color: rgb(60, 151, 255);
+    background-color: rgba(0, 0, 0, 0.452);
+}
+.Titulo h1{
+    color: rgb(255, 255, 255);
+}
+.Nombre{
+    position: absolute;
+    transform: translate(1250px, 10px);
+    color:  rgb(255, 255, 255);
+}
+h1{
+    color:  rgb(255, 255, 255);
+}
+li{
+    list-style: none;
+    color:  rgb(255, 255, 255);
+    font-size: 30px;
+}
+.Indice{
+    position: absolute;
+    transform: translate(50px, 20px);
+    text-decoration: underline;
+}
+.botones{
+    display: inline-flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    
+    transform: translate(-700px, -200px);
+}
+.Boton{
+    background-color: rgba(255, 255, 255, 0);
+    border-style: none;
+    color:  rgb(255, 255, 255);
+}
+.Barra{
+    background-color: white;
+    width: 5px;
+    height: 1590px;
+    display: inline-flex;
+    position: absolute;
+    
+    transform: translate(500px, 0);
+}
+.Intro{
+    width: 800px;
+    height: 600px;
+    display: inline-flex;
+    display: grid;
+    position: absolute;
+    position: fixed;
+    transform: translate(600px, 50px);
+    border-style: solid;
+    border-color: white;
+    color: white;
+    place-items: top, center;
+}
+.imagen1{
+    max-width: 600px;
+    max-height: 300px;
+    transform: translate(100px, 25px);
+}
+.imagen2{
+    max-width: 600px;
+    max-height: 300px;
+    transform: translate(250px, 25px);
+}
+.Intro p{
+    width: 750px;
+    padding-top: 20px;
+    padding-left: 5%;
+    transform: translate(10px, 10px);
+}
+.Informacion{
+    transform: translate(25%, 60px);
+    width: 70%;
+    height: auto;
+}
+h6{
+    color:  rgb(255, 255, 255);
+}
+.Imagenes{
+    width: 300px;
+    transform: translate(300px);
+}
+h3{
+    color:  rgb(255, 255, 255);
+}
+.Boton1{
+    position: absolute;
+    transform: translate(100px, 100px);
+    background-color: blue;
+    color: white;
+}
+.Boton2{
+    position: absolute;
+    transform: translate(1200px, 100px);
+    background-color: blue;
+    color: white;
+}
+h4{
+    color: white;
+}
+B{
+    color: red;
+}
